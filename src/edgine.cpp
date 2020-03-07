@@ -89,7 +89,7 @@ int edgine::evaluate(vector<sample*> samples){
 
   //Check if we have to request a new TOKEN and info & date
   logCount = ((double)clock() / CLOCKS_PER_SEC)-startLogCount ;      
-  if( logCount >= token_expiration_time -period){ //every "token_expiration_time" authenticate (the engine could go to sleep while has to update the token so: token_expiration_time-period)
+  if( logCount >= token_expiration_time-period){ //every "token_expiration_time" authenticate (the engine could go to sleep while has to update the token so: token_expiration_time-period)
     authenticate();
     setToken(token); // Update the token in each script
 
