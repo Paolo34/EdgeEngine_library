@@ -71,8 +71,6 @@ class APIRest{
   void checkIssueBufferSize();
   void checkSampleBufferSize();
 
-  static void POSTMeasurement_task( void *  );
-
   public:
   //variables
   

@@ -528,6 +528,6 @@ void edgine::deleteSpaces(string& str){
   }
 }
 
-double edgine::getPeriod(){
+int edgine::getPeriod(){
   return period;
 }
